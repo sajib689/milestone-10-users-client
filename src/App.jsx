@@ -1,8 +1,9 @@
 
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Swal from 'sweetalert2'
 
 function App() {
+  const navigate = useNavigate()
   const handleSubmit = e => {
     e.preventDefault()
     const form = e.target
@@ -31,6 +32,7 @@ function App() {
         
       }
       form.reset()
+      navigate('/users')
     })
     .catch(err => console.log(err))
   }
