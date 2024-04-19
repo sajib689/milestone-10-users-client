@@ -7,7 +7,7 @@ const User = () => {
   const [users, setUsers] = useState(usersAll);
 
   const handleDelete = (_id) => {
-    fetch(`https://milestone-10-users-server.vercel.app/users/${_id}`, {
+    fetch(`https://milestone-10-users-server-git-main-sajib689s-projects.vercel.app/users/${_id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

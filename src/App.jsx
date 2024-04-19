@@ -11,7 +11,7 @@ function App() {
     const email = form.email.value
     const phone = form.phone.value
     const user = {name,email, phone,location}
-    fetch('https://milestone-10-users-server.vercel.app/users',{
+    fetch('https://milestone-10-users-server-git-main-sajib689s-projects.vercel.app/users',{
       method: 'POST',
       headers: {
         'content-type': 'application/json',
