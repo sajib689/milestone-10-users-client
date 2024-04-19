@@ -13,7 +13,7 @@ const Update = () => {
         const email = form.email.value
         const phone = form.phone.value
         const user = {name,email, phone,location}
-        fetch( `http://localhost:3000/users/${_id}`,{
+        fetch( `https://milestone-10-users-server.vercel.app/users/${_id}`,{
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

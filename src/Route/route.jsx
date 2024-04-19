@@ -13,12 +13,12 @@ import Update from "../Components/Update/Update";
     {
         path: "/users",
         element: <User/>,
-        loader: () => fetch('http://localhost:3000/users')
+        loader: () => fetch('https://milestone-10-users-server.vercel.app/users')
     },
     {
         path: "/update/:id",
         element: <Update/>,
-        loader: ({params}) => fetch(`http://localhost:3000/users/${params.id}`)
+        loader: ({params}) => fetch(`https://milestone-10-users-server.vercel.app/users/${params.id}`)
     }
   ]);
 export default router;  
